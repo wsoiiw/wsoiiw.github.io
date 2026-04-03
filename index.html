@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>@wsoiiw</title>
+  <meta property="og:title" content="@wsoiiw" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<div class="layout">
+
+  <!-- ══ SIDEBAR ══ -->
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="pfp-wrap">
+        <img src="./images/profile.png" alt="nickname" class="pfp" />
+      </div>
+      <div class="bio">
+        <span class="bio-name">kimsepni</span>
+        <span class="bio-handle">@wsoiiw</span>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="./index.html" class="nav-item active" data-cat="all"><span class="nav-label">~/all</span></a>
+      <a href="./index.html" class="nav-item" data-cat="Category1"><span class="nav-label">~/category1</span></a>
+      <a href="./index.html" class="nav-item" data-cat="Category2"><span class="nav-label">~/category2</span></a>
+      <a href="./index.html" class="nav-item" data-cat="Category3"><span class="nav-label">~/category3</span></a>
+    </nav>
+    <div class="sidebar-section">
+      <span class="section-label">portfolio</span>
+      <a href="https://github.com/wsoiiw" target="_blank" class="proj-item">
+        <span class="proj-name">Project Title 1</span>
+        <span class="proj-tag">Tag</span>
+      </a>
+      <a href="https://github.com/wsoiiw" target="_blank" class="proj-item">
+        <span class="proj-name">Project Title 2</span>
+        <span class="proj-tag">Tag</span>
+      </a>
+    </div>
+    <div class="sidebar-section">
+      <span class="section-label">links</span>
+      <a href="https://github.com/wsoiiw" target="_blank" class="link-item">github</a>
+      <a href="https://wsoiiw.tistory.com" target="_blank" class="link-item">tistory</a>
+    </div>
+  </aside>
+
+  <!-- ══ MAIN ══ -->
+  <main class="main">
+    <div class="post-index-header">
+      <span class="prompt">$</span>
+      <span class="cmd">ls -lt ~/posts</span>
+    </div>
+
+    <!-- 포스트 목록 -->
+    <!-- 새 포스트 추가 시 아래 <div> 블록 복사, data-cat 수정 -->
+    <ul class="post-list">
+
+      <li class="post-list-item" data-cat="Category2">
+        <a href="./posts/post-2.html" class="post-list-link">
+          <span class="post-list-num">002</span>
+          <div class="post-list-info">
+            <span class="post-list-title">Post Title 2</span>
+            <span class="post-list-summary">포스트 요약 내용을 여기에 작성하세요.</span>
+          </div>
+        </a>
+        <span class="post-list-meta">
+          <span class="post-list-cat">Category2</span>
+          <span class="post-list-date">YYYY.MM.DD</span>
+        </span>
+      </li>
+
+      <li class="post-list-item" data-cat="Category1">
+        <a href="./posts/post-1.html" class="post-list-link">
+          <span class="post-list-num">001</span>
+          <div class="post-list-info">
+            <span class="post-list-title">Post Title 1</span>
+            <span class="post-list-summary">포스트 요약 내용을 여기에 작성하세요.</span>
+          </div>
+        </a>
+        <span class="post-list-meta">
+          <span class="post-list-cat">Category1</span>
+          <span class="post-list-date">YYYY.MM.DD</span>
+        </span>
+      </li>
+
+    </ul>
+
+    <!-- 페이징 -->
+    <div class="paging">
+      <button class="page-btn disabled">&lt;</button>
+      <span class="page-current">1</span>
+      <button class="page-btn disabled">&gt;</button>
+    </div>
+  </main>
+</div>
+
+<script>
+  /* 카테고리 필터 */
+  document.querySelectorAll('.nav-item[data-cat]').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var cat = this.dataset.cat;
+      document.querySelectorAll('.nav-item').forEach(function(n) { n.classList.remove('active'); });
+      this.classList.add('active');
+      document.querySelectorAll('.post-list-item').forEach(function(item) {
+        item.style.display = (cat === 'all' || item.dataset.cat === cat) ? '' : 'none';
+      });
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+/*
+  giscus custom theme — minimal terminal
+  @wsoiiw blog
+*/
+
+:root {
+  --color-canvas-default: #F6F6F6;
+  --color-canvas-subtle: #EFEFEF;
+  --color-border-default: #E0E0E0;
+  --color-border-muted: #E8E8E8;
+  --color-fg-default: #1A1A1A;
+  --color-fg-muted: #888888;
+  --color-accent-fg: #1A1A1A;
+  --color-accent-emphasis: #1A1A1A;
+  --color-btn-bg: #EFEFEF;
+  --color-btn-border: #E0E0E0;
+  --color-btn-hover-bg: #E0E0E0;
+  --color-btn-primary-bg: #1A1A1A;
+  --color-btn-primary-fg: #F6F6F6;
+  --color-btn-primary-border: #1A1A1A;
+  --color-btn-primary-hover-bg: #333333;
+  --color-input-bg: #F6F6F6;
+  --color-input-border: #E0E0E0;
+  --color-input-contrast: #EFEFEF;
+  --color-neutral-muted: rgba(26,26,26,0.06);
+  --color-header-bg: #F6F6F6;
+  --color-header-border: #E0E0E0;
+  --primer-shadow-focus: 0 0 0 2px #1A1A1A;
+  --font-family: 'DM Mono', 'Courier New', monospace;
+}
+
+body {
+  font-family: 'DM Mono', 'Courier New', monospace !important;
+  font-size: 12px !important;
+  background: transparent !important;
+}
+
+.gsc-main {
+  font-family: 'DM Mono', 'Courier New', monospace !important;
+}
+
+/* 댓글 입력창 */
+.gsc-comment-box {
+  border: 1px solid #E0E0E0 !important;
+  border-radius: 0 !important;
+  background: #F6F6F6 !important;
+}
+
+.gsc-comment-box-tabs {
+  border-bottom: 1px solid #E0E0E0 !important;
+  background: #EFEFEF !important;
+  border-radius: 0 !important;
+}
+
+.gsc-comment-box-tab-link {
+  font-family: 'DM Mono', monospace !important;
+  font-size: 11px !important;
+  border-radius: 0 !important;
+}
+
+.gsc-comment-box-textarea {
+  font-family: 'DM Mono', monospace !important;
+  font-size: 12px !important;
+  border-radius: 0 !important;
+  border: none !important;
+  background: #F6F6F6 !important;
+  resize: vertical !important;
+}
+
+/* 버튼 */
+.btn {
+  border-radius: 0 !important;
+  font-family: 'DM Mono', monospace !important;
+  font-size: 11px !important;
+}
+
+.btn-primary {
+  background: #1A1A1A !important;
+  color: #F6F6F6 !important;
+  border: none !important;
+}
+
+.btn-primary:hover {
+  background: #333 !important;
+}
+
+/* 댓글 카드 */
+.gsc-comment {
+  border: 1px solid #E0E0E0 !important;
+  border-radius: 0 !important;
+  background: #F6F6F6 !important;
+  margin-bottom: 12px !important;
+}
+
+.gsc-comment-header {
+  background: #EFEFEF !important;
+  border-bottom: 1px solid #E0E0E0 !important;
+  border-radius: 0 !important;
+  padding: 6px 12px !important;
+}
+
+.gsc-comment-author {
+  font-family: 'DM Mono', monospace !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+
+.gsc-comment-content {
+  font-family: 'DM Mono', monospace !important;
+  font-size: 12px !important;
+  line-height: 1.6 !important;
+  padding: 12px !important;
+}
+
+/* 로그인 버튼 */
+.gsc-login {
+  border-radius: 0 !important;
+}
+
+.gsc-login-button {
+  background: #1A1A1A !important;
+  color: #F6F6F6 !important;
+  border-radius: 0 !important;
+  font-family: 'DM Mono', monospace !important;
+  font-size: 12px !important;
+  border: none !important;
+  padding: 8px 16px !important;
+}
+
+.gsc-login-button:hover {
+  background: #333 !important;
+}
+
+/* 리액션 */
+.gsc-reactions {
+  font-family: 'DM Mono', monospace !important;
+}
+
+.gsc-reactions-button {
+  border-radius: 0 !important;
+  border: 1px solid #E0E0E0 !important;
+  background: #EFEFEF !important;
+  font-size: 11px !important;
+}
+
+/* 링크 */
+a {
+  color: #1A1A1A !important;
+}
+
+/* 페이지네이션 */
+.pagination-loader-container button {
+  border-radius: 0 !important;
+  font-family: 'DM Mono', monospace !important;
+  font-size: 11px !important;
+}

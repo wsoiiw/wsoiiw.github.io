@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Post Title 2 :: @wsoiiw</title>
+  <meta property="og:title" content="Post Title 2" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="../style.css" />
+  <script>document.addEventListener('DOMContentLoaded',function(){hljs.highlightAll();});</script>
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="pfp-wrap">
+        <img src="../images/profile.png" alt="nickname" class="pfp" />
+      </div>
+      <div class="bio">
+        <span class="bio-name">nickname</span>
+        <span class="bio-handle">@handle</span>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="../index.html" class="nav-item"><span class="nav-label">~/all</span></a>
+      <a href="../index.html" class="nav-item"><span class="nav-label">~/category1</span></a>
+      <a href="../index.html" class="nav-item"><span class="nav-label">~/category2</span></a>
+      <a href="../index.html" class="nav-item"><span class="nav-label">~/category3</span></a>
+    </nav>
+    <div class="sidebar-section">
+      <span class="section-label">portfolio</span>
+      <a href="https://github.com/your-repo" target="_blank" class="proj-item">
+        <span class="proj-name">Project Title 1</span>
+        <span class="proj-tag">Tag</span>
+      </a>
+      <a href="https://github.com/your-repo" target="_blank" class="proj-item">
+        <span class="proj-name">Project Title 2</span>
+        <span class="proj-tag">Tag</span>
+      </a>
+    </div>
+    <div class="sidebar-section">
+      <span class="section-label">links</span>
+      <a href="https://github.com/your-id" target="_blank" class="link-item">github</a>
+      <a href="https://your-blog.tistory.com" target="_blank" class="link-item">tistory</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <!-- 뒤로가기 -->
+    <div class="post-back">
+      <a href="../index.html" class="back-link">
+        <span class="prompt">$</span> cd ..
+      </a>
+    </div>
+
+    <article class="post">
+      <header class="post-header">
+        <div class="post-header-top">
+          <span class="post-cat-badge">Category2</span>   <!-- 카테고리 -->
+          <time class="post-date">YYYY.MM.DD</time>       <!-- 날짜 -->
+        </div>
+        <h1 class="post-title">
+          Post Title 2                                     <!-- 제목 -->
+          <br><span class="post-title-sub">부제목 (선택)</span>
+        </h1>
+        <div class="post-tags">
+          <span class="tag">tag1</span>
+          <span class="tag">tag2</span>
+          <span class="tag">tag3</span>
+        </div>
+      </header>
+
+      <div class="post-body">
+        <!-- 본문 여기에 작성 -->
+        <p>Content goes here.</p>
+
+        <h2>Heading 2</h2>
+        <p>본문 단락.</p>
+
+        <pre><code class="language-bash"># 코드 블록 예시
+echo "hello world"</code></pre>
+
+        <blockquote>인용문 예시</blockquote>
+      </div>
+
+      <!-- giscus 댓글 -->
+      <div class="post-comments">
+        <div class="comments-header">
+          <span class="prompt">$</span>
+          <span class="cmd">cat comments.log</span>
+        </div>
+        <script src="https://giscus.app/client.js"
+          data-repo="wsoiiw/wsoiiw.github.io"
+          data-repo-id="R_kgDOR2vRYQ"
+          data-category="Announcements"
+          data-category-id="DIC_kwDOR2vRYc4C57M_"
+          data-mapping="og:title"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="top"
+          data-theme="https://wsoiiw.github.io/giscus-theme.css"
+          data-lang="ko"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async>
+        </script>
+      </div>
+    </article>
+  </main>
+</div>
+</body>
+</html>
